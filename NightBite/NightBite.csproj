@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDE83A7D-B16C-4B3A-B119-81B480BC5963}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NightBite</RootNamespace>
+    <AssemblyName>NightBite</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDeliveryman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDeliveryman.Designer.cs">
+      <DependentUpon>AdminDeliveryman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDmanAccept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDmanAccept.Designer.cs">
+      <DependentUpon>AdminDmanAccept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFoodItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFoodItems.Designer.cs">
+      <DependentUpon>AdminFoodItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFoodItemsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFoodItemsAdd.Designer.cs">
+      <DependentUpon>AdminFoodItemsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFoodItemsDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFoodItemsDelete.Designer.cs">
+      <DependentUpon>AdminFoodItemsDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOrders.Designer.cs">
+      <DependentUpon>AdminOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRemoveDman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRemoveDman.Designer.cs">
+      <DependentUpon>AdminRemoveDman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRemoveStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRemoveStaff.Designer.cs">
+      <DependentUpon>AdminRemoveStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminStaff.Designer.cs">
+      <DependentUpon>AdminStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStaffAccept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminStaffAccept.Designer.cs">
+      <DependentUpon>AdminStaffAccept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignDeliveryStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignDeliveryStaff.Designer.cs">
+      <DependentUpon>AssignDeliveryStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse.Designer.cs">
+      <DependentUpon>Browse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearCart.cs" />
+    <Compile Include="ConfirmOrder.cs" />
+    <Compile Include="DLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLogin.Designer.cs">
+      <DependentUpon>DLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DProfile.Designer.cs">
+      <DependentUpon>DProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DRegistration.Designer.cs">
+      <DependentUpon>DRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Histroy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Histroy.Designer.cs">
+      <DependentUpon>Histroy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavHistory.cs" />
+    <Compile Include="OngoingDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OngoingDelivery.Designer.cs">
+      <DependentUpon>OngoingDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinePayment.Designer.cs">
+      <DependentUpon>OnlinePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="StaffFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffFood.Designer.cs">
+      <DependentUpon>StaffFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffHomePage.Designer.cs">
+      <DependentUpon>StaffHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffLogin.Designer.cs">
+      <DependentUpon>StaffLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffOrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffOrderHistory.Designer.cs">
+      <DependentUpon>StaffOrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegistration.Designer.cs">
+      <DependentUpon>StaffRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHistory.Designer.cs">
+      <DependentUpon>UserHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userlogin.Designer.cs">
+      <DependentUpon>Userlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegister.Designer.cs">
+      <DependentUpon>UserRegister.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDeliveryman.resx">
+      <DependentUpon>AdminDeliveryman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDmanAccept.resx">
+      <DependentUpon>AdminDmanAccept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFoodItems.resx">
+      <DependentUpon>AdminFoodItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFoodItemsAdd.resx">
+      <DependentUpon>AdminFoodItemsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFoodItemsDelete.resx">
+      <DependentUpon>AdminFoodItemsDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrders.resx">
+      <DependentUpon>AdminOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRemoveDman.resx">
+      <DependentUpon>AdminRemoveDman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRemoveStaff.resx">
+      <DependentUpon>AdminRemoveStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminStaff.resx">
+      <DependentUpon>AdminStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminStaffAccept.resx">
+      <DependentUpon>AdminStaffAccept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignDeliveryStaff.resx">
+      <DependentUpon>AssignDeliveryStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse.resx">
+      <DependentUpon>Browse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLogin.resx">
+      <DependentUpon>DLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DProfile.resx">
+      <DependentUpon>DProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DRegistration.resx">
+      <DependentUpon>DRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histroy.resx">
+      <DependentUpon>Histroy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OngoingDelivery.resx">
+      <DependentUpon>OngoingDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinePayment.resx">
+      <DependentUpon>OnlinePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffFood.resx">
+      <DependentUpon>StaffFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffHomePage.resx">
+      <DependentUpon>StaffHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffLogin.resx">
+      <DependentUpon>StaffLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffOrderHistory.resx">
+      <DependentUpon>StaffOrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegistration.resx">
+      <DependentUpon>StaffRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHistory.resx">
+      <DependentUpon>UserHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userlogin.resx">
+      <DependentUpon>Userlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegister.resx">
+      <DependentUpon>UserRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0017.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0019.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0023.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0026.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0027.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0028.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0029.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0030.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\IMG-20250716-WA0032.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\WhatsApp Image 2025-07-16 at 10.37.19_b4124b90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\WhatsApp Image 2025-07-16 at 10.37.19_b4792bdc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\WhatsApp Image 2025-07-16 at 10.37.20_a430abc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\WhatsApp Image 2025-07-16 at 10.44.54_61c3368c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\WhatsApp Image 2025-07-16 at 10.44.54_7446b237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.00_d923a844.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.01_99ec3687.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.01_f74428e8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.02_77b1410f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.02_749340b4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.02_a00bbf76.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.03_989a1480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.04_68b9bd5e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.04_3768d1fb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.04_7920a694.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.05_36b04076.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.06_687c8013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.06_3455d137.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.06_dc07f182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.07_273f97ee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.07_cdf3210e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.08_7a09b44e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.08_740e2774.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.09_66c8fc77.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.09_19200f82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.09_32145cd2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.10_92a35b31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.10_ed5ada47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.11_11ddee63.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.11_bd8080df.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.11_c31d4305.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.12_50290339.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.12_cca73fde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.14_28789480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.15_8997244d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.15_ece03898.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.16_121a8ce8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.16_c30243ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.17_ac95fdda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.17_d9765223.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.18_13eb1f11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.18_d7838184.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\WhatsApp Image 2025-07-02 at 08.56.18_f91c4ad9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\2WhatsApp Image 2025-07-17 at 12.54.28_baf8e6db.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\WhatsApp Image 2025-07-17 at 12.54.28_baf8e6db.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 12_58_52 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_15_02 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_18_01 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_18_07 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_22_58 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_25_44 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_30_13 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_33_25 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_37_11 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_35_46 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_39_30 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_43_55 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 01_43_43 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_07_53 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_08_31 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_08_04 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_08_12 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_08_56 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_17_00 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_41_02 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_34_00 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_40_39 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_40_48 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_33_49 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_39_50 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_39_59 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 02_40_28 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 03_32_45 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 03_32_54 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 03_34_45 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 03_37_41 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 03_42_49 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 03_58_32 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_00_35 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_01_18 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_02_49 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_16_51 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_19_01 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_18_53 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_18_44 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_18_34 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\ChatGPT Image Jul 17, 2025, 04_22_31 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\ChatGPT Image Jul 17, 2025, 10_28_05 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture2\ChatGPT Image Jul 17, 2025, 10_32_47 PM.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
